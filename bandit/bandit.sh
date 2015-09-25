@@ -26,4 +26,5 @@ cd inhere && cat ./-file07
 
 # 6
 find ./inhere | xargs file | grep text | cut -d \t -f 1 | sed -e 's/: ASCII//g' | xargs du -b | grep 1033 | xargs cat
+# find . -size 1033c -readable | xargs head -1
 # DXjZPULLxYr17uwoI01bNLQbtFemEgo7
